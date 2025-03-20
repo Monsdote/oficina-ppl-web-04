@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exemplo1</title>
+
+    <style>
+        *{
+            font-size: 16px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .container{
+            width: 40rem;
+            min-height: 25rem;
+            margin: 1rem auto;
+            border: 1px solid rgb(32, 64, 128);
+            box-shadow: .5rem .5rem .3rem .01rem ;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        h1{
+            font-size: 2rem;
+            width: 40rem;
+            margin: 1rem auto;
+            text-align: center;
+        }
+        .produto{
+            background-color: blueviolet;
+            color: chartreuse;
+            width: 10rem;
+            height: 10rem;
+            border-radius: 15%;  
+            padding: 2rem;
+            font-weight: bold;
+            margin: 1rem;
+            box-shadow: .5rem .5rem .3rem .01rem  rgba(122, 58, 151, 0.384);
+
+        }
+        .preco{
+            color: blueviolet;
+            background-color: chartreuse;
+            width: 8rem;
+            height: 8rem;
+            border-radius: 15%;  
+            padding: 2rem;
+            font-weight: bolder;
+            margin: 1rem;
+            box-shadow: .5rem .5rem .3rem .01rem  rgba(138, 248, 110, 0.384);
+
+        }
+
+        .produto, .preco{
+            border-radius: 15%;  
+            padding: 2rem;
+            font-weight: bold;
+            margin: 1rem;
+            box-shadow: .5rem .5rem .3rem .01rem  rgba(122, 58, 151, 0.384);
+
+        }
+        
+        .alerta{
+            background-color: rgb(255, 123, 0);
+            color: rgb(207, 0, 0);
+            width: 8rem;
+            height: 8rem;
+            border-radius: 15%;  
+            padding: 2rem;
+            font-weight: bolder;
+            margin: 1rem;
+            box-shadow: .5rem .5rem .3rem .01rem  rgba(231, 152, 34, 0.384);
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Tabela de preços</h1>
+    <div class="container">
+    <script>
+
+        var produto = prompt("informe o produto: ");
+    
+        
+        switch(produto.toLowerCase()){
+            case "arroz":
+                document.write("<div class='produto'> Você comprou arroz<br></div>");
+                document.write("<div class='preco'>preço: R$ 18,75</div>");
+                break;
+            case "feijao":
+                document.write("<div class='alerta'>>vosmecê escreveu feijão sem acento, seu burro.<br></div>")
+            case "feijão":
+                document.write("<div class='produto'> Você comprou feijão<br></div>");
+                document.write("<div class='preco'>preço: R$ 15,00</div>");
+                break;
+            case "café":
+            case "cafe":
+                document.write("<div class='produto'> Você comprou cafe<br></div>");
+                document.write("<div class='preco'>preço: R$ 32,15</div>");
+                break;
+            default:
+                document.write(`${produto} não é nome de produto mano<br>`);
+                break;
+
+        }
+
+    </script>
+    </div>
+
+    <!--
+    estrutura condicional
+    -->
+    
+    
+</body>
+</html>
